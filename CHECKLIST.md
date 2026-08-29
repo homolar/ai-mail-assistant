@@ -104,11 +104,11 @@
 
 ## 10. Finální kontrola a odevzdání
 
-- [ ] Otevřít GitHub repozitář v anonymním/private okně prohlížeče
-- [ ] Ověřit, že repozitář lze zobrazit bez přihlášení
-- [ ] Ověřit, že jsou vidět zdrojové soubory
-- [ ] Ověřit, že je vidět README
-- [ ] Ověřit, že nikde není API key
+- [x] Otevřít GitHub repozitář v anonymním/private okně prohlížeče
+- [x] Ověřit, že repozitář lze zobrazit bez přihlášení
+- [x] Ověřit, že jsou vidět zdrojové soubory
+- [x] Ověřit, že je vidět README
+- [x] Ověřit, že nikde není API key
 - [x] Ověřit, že `.env` není v GitHub repozitáři
-- [ ] Zkopírovat adresu hlavní stránky repozitáře
-- [ ] Tento odkaz odevzdat lektorovi
+- [x] Zkopírovat adresu hlavní stránky repozitáře `https://github.com/homolar/ai-mail-assistant`
+- [x] Připravit odkaz k odevzdání lektorovi: `https://github.com/homolar/ai-mail-assistant/tree/main/assignment_1_openai_tool_calling`
