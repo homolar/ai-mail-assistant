@@ -1,0 +1,11 @@
+ID e-mailu: EMAIL-2026-105
+From: jan.novotny@omegaservis.example
+Subject: Úprava webu
+
+Dobrý den,
+potřebovali bychom něco upravit na našem firemním webu.
+Zatím ale nevíme, které stránky se změna týká ani co přesně upravit.
+
+S pozdravem
+Jan Novotný
+Omega Servis s.r.o.

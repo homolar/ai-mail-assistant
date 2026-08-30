@@ -168,3 +168,113 @@
 - [x] Commitnout a odeslat změny na GitHub
 - [x] Ověřit veřejnou dostupnost bez přihlášení
 - [x] Odevzdat přímý odkaz na složku Úkolu 2 `https://github.com/homolar/ai-mail-assistant/tree/main/assignment_2_langflow`
+
+# Úkol 3 – Agent framework, LiteLLM a auditing
+
+## 15. Příprava frameworku
+
+- [x] Zvolit agentní framework OpenAI Agents SDK
+- [x] Zvolit LiteLLM jako přepínač poskytovatele a modelu
+- [x] Vytvořit složku `assignment_3_agent_framework`
+- [x] Nainstalovat `openai-agents` s podporou LiteLLM
+- [x] Ověřit kompatibilitu závislostí s Pythonem 3.14
+- [x] Přidat proměnnou `LLM_MODEL` do `.env`
+- [x] Přidat bezpečný příklad `LLM_MODEL` do `.env.example`
+- [x] Nastavit výchozí model `openai/gpt-5.4-nano`
+- [x] Vytvořit nejmenšího funkčního Agenta
+- [x] Ověřit volání modelu prostřednictvím LiteLLM
+
+## 16. Strukturovaný výstup
+
+- [x] Vytvořit Pydantic model `AgentResponse`
+- [x] Definovat povolené hodnoty `status`
+- [x] Definovat povolené hodnoty `action`
+- [x] Přidat volitelné `task_id`
+- [x] Přidat volitelné `proposal_id`
+- [x] Nastavit `output_type=AgentResponse`
+- [x] Ověřit platný strukturovaný výstup
+- [x] Ověřit negativní případ bez pracovního požadavku
+
+## 17. Databáze a auditní základ
+
+- [x] Vytvořit modul `storage.py`
+- [x] Ukládat databázi do lokální složky `data`
+- [x] Přidat složku `data` do `.gitignore`
+- [x] Vytvořit tabulku `tasks`
+- [x] Nastavit `email_id` jako unikátní hodnotu
+- [x] Vytvořit tabulku `audit_events`
+- [x] Vytvořit tabulku `improvement_proposals`
+- [x] Inicializovat databázi při spuštění aplikace
+- [x] Vytvořit funkci `record_audit_event`
+- [x] Vytvořit `AppContext` s unikátním `run_id`
+- [x] Předat kontext do `Runner.run_sync`
+- [x] Implementovat audit začátku běhu
+- [x] Implementovat audit úspěšného dokončení
+- [x] Implementovat audit selhání
+- [x] Ověřit záznamy `started` a `completed` přímo v databázi
+
+## 18. Nástroje Mail Assistanta
+
+- [x] Vytvořit frameworkový nástroj pro vytvoření úkolu
+- [x] Vytvořit frameworkový nástroj pro načtení úkolů
+- [x] Přidat audit každého volání nástroje
+- [x] Předávat nástrojům `run_id` prostřednictvím kontextu
+- [x] Zabránit duplicitnímu vytvoření úkolu podle `email_id`
+- [x] Zabránit přímému spouštění libovolných SQL příkazů modelem
+- [x] Připojit nástroje k Agentovi
+- [x] Upravit instrukce Agenta pro bezpečné používání nástrojů
+
+## 19. Návrhy zlepšení
+
+- [x] Evidovat opakované typy požadavků v auditu
+- [x] Vytvořit nástroj pro analýzu opakovaných požadavků
+- [x] Vytvořit návrh nové schopnosti nebo nástroje
+- [x] Uložit návrh do tabulky `improvement_proposals`
+- [x] Nastavit nový návrh do stavu `pending`
+- [x] Zabránit automatické aktivaci navrženého nástroje
+- [x] Vyžadovat schválení vlastníkem nebo správcem
+- [x] Ověřit, že Agent pouze předloží návrh
+
+## 20. Bezpečnostní testy
+
+- [x] Považovat obsah e-mailu za nedůvěryhodná data
+- [x] Otestovat e-mail s prompt injection
+- [x] Ověřit, že Agent neprozradí API klíč
+- [x] Ověřit, že Agent nemůže měnit databázové schéma
+- [x] Ověřit, že Agent nemůže mazat úkoly
+- [x] Ověřit, že audit neukládá API klíč
+- [x] Ověřit, že audit neukládá celé znění e-mailu
+- [x] Ověřit auditní posloupnost `started → list_tasks → completed`
+- [x] Používat pouze smyšlené testovací údaje
+
+## 21. Funkční testy
+
+- [x] Otestovat vytvoření úkolu z pracovního e-mailu
+- [x] Ověřit vrácení skutečného `task_id`
+- [x] Ověřit výpis uložených úkolů pomocí nástroje `list_tasks`
+- [x] Ověřit strukturovanou odpověď s akcí `tasks_listed`
+- [x] Otestovat e-mail bez pracovního požadavku
+- [x] Otestovat opakované zpracování stejného `email_id`
+- [x] Otestovat strukturovaný výstup všech hlavních větví
+- [x] Otestovat změnu modelu prostřednictvím `LLM_MODEL`
+- [x] Ověřit nápovědu pomocí `--help`
+- [x] Otestovat zadání požadavku pomocí `--text`
+- [x] Otestovat načtení e-mailu ze souboru pomocí `--file`
+- [x] Ověřit srozumitelnou chybu při neexistujícím vstupním souboru
+
+## 22. Dokumentace a odevzdání
+
+- [x] Vytvořit `assignment_3_agent_framework/README.md`
+- [x] Popsat architekturu Agenta
+- [x] Popsat rozdíl mezi Agents SDK a LiteLLM
+- [x] Popsat Structured Outputs
+- [x] Popsat databázové nástroje
+- [x] Popsat auditní stopu
+- [x] Popsat schvalování návrhů zlepšení
+- [x] Přidat návod instalace a spuštění
+- [x] Přidat příklady vstupů a výsledků
+- [x] Doplnit Úkol 3 do root `README.md`
+- [x] Ověřit, že Git neobsahuje `.env` ani lokální databázi
+- [ ] Commitnout a odeslat změny na GitHub
+- [ ] Ověřit veřejnou dostupnost bez přihlášení
+- [ ] Odevzdat přímý odkaz na složku Úkolu 3 `https://github.com/homolar/ai-mail-assistant/tree/main/assignment_2_langflow`

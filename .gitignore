@@ -10,3 +10,5 @@ wheels/
 .venv
 # Secrets and local configuration
 .env
+# Local SQLite database and runtime data for Assignment 3
+assignment_3_agent_framework/data/
