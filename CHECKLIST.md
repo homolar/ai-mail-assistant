@@ -165,6 +165,6 @@
 - [x] Přidat návod na import a spuštění
 - [x] Uvést příklady testovacích vstupů a výsledků
 - [x] Ověřit, že export neobsahuje API klíč
-- [ ] Commitnout a odeslat změny na GitHub
-- [ ] Ověřit veřejnou dostupnost bez přihlášení
-- [ ] Odevzdat přímý odkaz na složku Úkolu 2 ``
+- [x] Commitnout a odeslat změny na GitHub
+- [x] Ověřit veřejnou dostupnost bez přihlášení
+- [x] Odevzdat přímý odkaz na složku Úkolu 2 `https://github.com/homolar/ai-mail-assistant/tree/main/assignment_2_langflow`
