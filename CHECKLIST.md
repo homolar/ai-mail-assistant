@@ -275,6 +275,6 @@
 - [x] Přidat příklady vstupů a výsledků
 - [x] Doplnit Úkol 3 do root `README.md`
 - [x] Ověřit, že Git neobsahuje `.env` ani lokální databázi
-- [ ] Commitnout a odeslat změny na GitHub
-- [ ] Ověřit veřejnou dostupnost bez přihlášení
-- [ ] Odevzdat přímý odkaz na složku Úkolu 3 `https://github.com/homolar/ai-mail-assistant/tree/main/assignment_2_langflow`
+- [x] Commitnout a odeslat změny na GitHub
+- [x] Ověřit veřejnou dostupnost bez přihlášení
+- [x] Odevzdat přímý odkaz na složku Úkolu 3 `https://github.com/homolar/ai-mail-assistant/tree/main/assignment_3_agent_framework`
