@@ -132,36 +132,39 @@
 
 ## 12. Návrh řešení
 
-- [ ] Upřesnit vstup a očekávaný výstup agenta
-- [ ] Vytvořit základní flow v LangFlow
-- [ ] Přidat Chat Input
-- [ ] Přidat Agent
-- [ ] Nastavit model `gpt-5.4-nano`
-- [ ] Přidat Chat Output
-- [ ] Připravit SQLite databázi úkolů
-- [ ] Přidat nástroj pro zápis úkolu do databáze
-- [ ] Přidat nástroj pro čtení úkolů z databáze
-- [ ] Nastavit instrukce Mail Assistanta
-- [ ] Propojit komponenty flow
+- [x] Upřesnit vstup a očekávaný výstup agenta
+- [x] Vytvořit základní flow v LangFlow
+- [x] Přidat Chat Input
+- [x] Přidat Agent
+- [x] Nastavit model `gpt-5.4-nano`
+- [x] Přidat Chat Output
+- [x] Připravit SQLite databázi úkolů
+- [x] Přidat nástroj pro zápis úkolu do databáze
+- [x] Přidat nástroj pro čtení úkolů z databáze
+- [x] Nastavit instrukce Mail Assistanta
+- [x] Propojit komponenty flow
 
 ## 13. Testování
 
-- [ ] Otestovat vytvoření úkolu z pracovního požadavku
-- [ ] Ověřit uložení úkolu do databáze
-- [ ] Otestovat načtení uložených úkolů
-- [ ] Otestovat e-mail, který pracovní úkol neobsahuje
-- [ ] Ověřit, že agent nepoužije databázový nástroj zbytečně
-- [ ] Používat pouze smyšlené testovací údaje
+- [x] Otestovat vytvoření úkolu z pracovního požadavku
+- [x] Ověřit uložení úkolu do databáze
+- [x] Otestovat načtení uložených úkolů
+- [x] Otestovat e-mail, který pracovní úkol neobsahuje
+- [x] Ověřit, že agent nepoužije databázový nástroj zbytečně
+- [x] Používat pouze smyšlené testovací údaje
+- [x] Otestovat technické odmítnutí zakázaného příkazu `UPDATE`
+- [x] Otestovat prompt injection vložený do e-mailu
+- [x] Ověřit, že prompt injection nezpůsobí spuštění zakázaného SQL
 
 ## 14. Dokumentace a odevzdání
 
-- [ ] Exportovat dokončený LangFlow flow jako JSON
-- [ ] Uložit JSON do složky `assignment_2_langflow`
-- [ ] Vytvořit `assignment_2_langflow/README.md`
-- [ ] Popsat princip flow a použité komponenty
-- [ ] Přidat návod na import a spuštění
-- [ ] Uvést příklady testovacích vstupů a výsledků
-- [ ] Ověřit, že export neobsahuje API klíč
+- [x] Exportovat dokončený LangFlow flow jako JSON
+- [x] Uložit JSON do složky `assignment_2_langflow`
+- [x] Vytvořit `assignment_2_langflow/README.md`
+- [x] Popsat princip flow a použité komponenty
+- [x] Přidat návod na import a spuštění
+- [x] Uvést příklady testovacích vstupů a výsledků
+- [x] Ověřit, že export neobsahuje API klíč
 - [ ] Commitnout a odeslat změny na GitHub
 - [ ] Ověřit veřejnou dostupnost bez přihlášení
-- [ ] Odevzdat přímý odkaz na složku Úkolu 2
+- [ ] Odevzdat přímý odkaz na složku Úkolu 2 ``
